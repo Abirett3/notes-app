@@ -1,3 +1,7 @@
+/*========================================================
+-- copyright 2023 A.H. Abir
+========================================================*/
+
 /* Import Google Font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 *{
@@ -12,6 +16,23 @@ body{
 ::selection{
   color: #fff;
   background: #618cf8;
+}
+.header-wrapper{
+  max-width: 405px;
+  height: 100px;
+  padding: 20px 0 30px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+h1 {
+  font-size: 20px;
+  text-align: center;
+}
+.text-p{
+  font-size: 12px;
+  text-align: center;
 }
 .wrapper{
   margin: 50px;
@@ -231,6 +252,9 @@ form button{
   background: #6A93F8;
 }
 
+
+/* Responsive Settings */
+
 @media (max-width: 660px){
   .wrapper{
     margin: 15px;
@@ -246,5 +270,11 @@ form button{
 
   .text {
     font-size: 26px;
+  }
+}
+@media (max-width: 600px) {
+  .header-wrapper {
+    padding: 20px 0;
+    margin: 20px auto;
   }
 }
